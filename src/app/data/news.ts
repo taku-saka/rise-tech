@@ -13,7 +13,7 @@ export const news = [
     title: "社名変更のお知らせ",
     date: "2025.04.01",
     category: "お知らせ",
-    image: "/image/news/news7.jpg",
+    image: "/image/news/news7.png",
     excerpt: "株式会社Rise Tech Solutionsへ社名を変更いたしました。",
     content: `いつもご支援いただき、誠にありがとうございます。
 このたび弊社は、さらなる成長と挑戦に向けて、

@@ -89,7 +89,7 @@ const NewsListPage = () => {
                   <h3 className="font-serif text-lg font-bold mb-3 text-gray-800">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4">{item.excerpt}</p>
+                  <p className="text-gray-600 text-sm mb-4 h-[3.5rem] overflow-hidden">{item.excerpt}</p>
                   <div className="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                     続きを読む <ArrowRight className="w-4 h-4 ml-2" />
                   </div>

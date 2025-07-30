@@ -127,7 +127,7 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({
                 <h3 className="font-serif text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
                   {achievement.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{achievement.description}</p>
+                <p className="text-gray-600 mb-4 h-[3.5rem] overflow-hidden">{achievement.description}</p>
                 <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
                   詳細を見る{" "}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />

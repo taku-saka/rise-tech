@@ -74,7 +74,7 @@ const CompanyOverviewPage = () => {
 
             <div className="grid md:grid-cols-3 gap-6 premium-reveal stagger-delay-5 p-2">
               <div className="md:col-span-1">
-                <h3 className="font-serif text-lg font-bold text-gray-800 p-2 flex items-center">
+                <h3 className="font-serif text-lg font-bold text-gray-800 flex items-center">
                   役員層
                 </h3>
               </div>
@@ -85,8 +85,8 @@ const CompanyOverviewPage = () => {
                 <p>青木 耶雲</p>
                 {/* <p className="">執行役員CSO</p>
                   <p>藤井 謙治</p> */}
-                <p className="">執行役員VPoE</p>
-                <p>熊谷 洸介</p>
+                {/* <p className="">執行役員VPoE</p>
+                <p>熊谷 洸介</p> */}
                 <p className="">VPoE</p>
                 <p>坂口 拓</p>
                 <p className="">Principal Engineer</p>
