@@ -4,7 +4,7 @@ export const news = [
     title: "新オフィス開設のお知らせ",
     date: "2024.05.23",
     category: "お知らせ",
-    image: "/kumamoto.png",
+    image: "/image/news/news1.png",
     excerpt: "事業拡大に伴い、熊本支局を新設いたしました。",
     content: `この度、株式会社Rise Tech Solutionsでは、事業拡大に伴い熊本支局を新設いたしましたのでお知らせいたします。
 
@@ -22,7 +22,7 @@ export const news = [
     title: "DX推進支援サービス開始",
     date: "2024.01.10",
     category: "サービス",
-    image: "/S__4333626_0.jpg",
+    image: "/image/news/news2.jpg",
     excerpt:
       "企業のデジタルトランスフォーメーションを包括的に支援する新サービスを開始しました。",
     content: `株式会社Rise Tech Solutionsでは、企業のデジタルトランスフォーメーション（DX）を包括的に支援する新サービス「DX推進支援パッケージ」の提供を開始いたします。
@@ -43,7 +43,7 @@ export const news = [
     title: "年末年始休業のお知らせ",
     date: "2023.12.25",
     category: "お知らせ",
-    image: "/IMG_1913.jpeg",
+    image: "/image/news/news3.jpeg",
     excerpt: "年末年始の休業期間についてお知らせいたします。",
     content: `平素は格別のご高配を賜り、厚く御礼申し上げます。
 
@@ -63,7 +63,7 @@ export const news = [
     title: "新技術研修プログラム開始",
     date: "2023.12.01",
     category: "お知らせ",
-    image: "/S__4333621.jpg",
+    image: "/image/news/news4.jpg",
     excerpt: "最新技術習得のための社内研修プログラムを開始しました。",
     content: `技術力向上を目的とした新しい研修プログラムを開始いたします。AI、クラウド、セキュリティなど最新技術の習得を支援します。`,
   },
