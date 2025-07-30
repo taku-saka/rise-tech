@@ -118,7 +118,7 @@ const NewsSection: React.FC<NewsSectionProps> = ({ newsRef, newsVisible }) => {
                 <h3 className="font-serif text-lg font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{item.excerpt}</p>
+                <p className="text-gray-600 text-sm h-[3.5rem] overflow-hidden">{item.excerpt}</p>
               </article>
             </Link>
           ))}
