@@ -128,33 +128,30 @@ const RecruitmentDetailPage = async ({
               応募方法
             </h2>
             <p className="text-gray-700 mb-4">
-              {/* 応募フォーム作成後は「下記の応募フォームより」に変更 */}
-              下記のメールかお電話よりご連絡ください（応募フォーム準備中）。
-              <br />
-              応募後に書類選考をさせていただき、結果を1週間以内にご連絡いたします。
+              下記の応募フォームより
             </p>
-            <div className="space-y-2 text-gray-700">
+            {/* <div className="space-y-2 text-gray-700">
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-blue-600" />
                 <span>
-                  recruit＠risetech-solutions.com (＠は半角に書き換えてください)
+                  recruit@risetech-solutions.co.jp
                 </span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-blue-600" />
                 <span>03-6804-2140（採用担当）</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="text-center mt-12 stagger-fade-in stagger-delay-6">
-          {/* <Link href={`/recruitment/form/${position.id}`} key={position.id}> */}
+          <Link href={`/recruitment/form/${position.id}`} key={position.id}>
           <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
-            {/* <Send className="w-4 h-4 mr-2 inline" /> */}
-            応募フォームへ（準備中）
+            <Send className="w-4 h-4 mr-2 inline" />
+            応募フォームへ
           </button>
-          {/* </Link> */}
+          </Link>
           <Link href="/recruitment">
             <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors mr-4 hover-lift-enhanced cursor-pointer">
               採用情報一覧に戻る

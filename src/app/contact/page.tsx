@@ -28,7 +28,7 @@ const ContactPage = () => {
 
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const res = await fetch("https://rt-solutions.co.jp/api/contact.php", {
+    const res = await fetch("https://rt-solutions.co.jp/api/contact_db.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(contactFormData),
