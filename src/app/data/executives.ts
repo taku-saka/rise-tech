@@ -5,7 +5,7 @@ export const executives = [
     nameKana: "なかじま よしひさ",
     position: "社長室",
     type: "executive",
-    image: "/S__4333599.jpg",
+    image: "/image/executives/nakajima.jpg",
     bio: "社長室として経営戦略の立案・実行を担当。豊富な経営経験を活かし、会社の成長戦略を推進している。",
     career: [
       "2020年 - 株式会社ALCSに入社",
@@ -24,7 +24,7 @@ export const executives = [
     nameKana: "あおき やくも",
     position: "取締役COO",
     type: "executive",
-    image: "/S__4333623.jpg",
+    image: "/image/executives/aoki.jpg",
     bio: "取締役COOとして事業運営全般を統括。効率的なオペレーション構築と品質管理に注力している。",
     career: [
       "2014年 - 株式会社アイシンに入社",
@@ -65,7 +65,7 @@ export const executives = [
     nameKana: "くまがい こうすけ",
     position: "執行役員VPoE",
     type: "officer",
-    image: "/Staff001.jpg",
+    image: "/image/executives/kumagai.jpg",
     bio: "執行役員VPoEとしてエンジニア組織の構築・運営を担当。技術力向上と組織文化の醸成に注力。",
     career: [
       "2014年 - Web系スタートアップにてフルスタックエンジニアとして従事",
@@ -88,7 +88,7 @@ export const executives = [
     nameKana: "さかぐち たく",
     position: "VPoE",
     type: "officer",
-    image: "/586.jpg",
+    image: "/image/executives/sakaguchi.jpg",
     bio: "VPoEとしてエンジニアの採用・育成を担当。技術教育プログラムの企画・運営を推進。",
     career: [
       "2016年 - SIerにてシステム開発に従事",
@@ -106,7 +106,7 @@ export const executives = [
     nameKana: "かとう かずと",
     position: "Principal Engineer",
     type: "officer",
-    image: "/kato.png",
+    image: "/image/executives/kato.png",
     bio: "Principal Engineerとして技術戦略の立案・実行を担当。最新技術の導入と技術的課題の解決をリード。",
     career: [
       "2011年 - 大手インターネット企業にてバックエンドエンジニアとして従事",

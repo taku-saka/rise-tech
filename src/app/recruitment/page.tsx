@@ -29,7 +29,7 @@ const RecruitmentListPage = () => {
               className="m-3 inline-flex items-center btn-primary-enhanced text-white px-6 py-3 rounded-full font-semibold hover-lift-enhanced"
             >
               {/* <ExternalLink className="w-4 h-4 mr-2" /> */}
-              <img className="w-6 h-6 mr-3" src="/Wantedly_Mark_Wht.png" />
+              <img className="w-6 h-6 mr-3" src="/logo/wantedly_logo.png" />
               <span>Wantedly掲載情報</span>
             </a>
             <a

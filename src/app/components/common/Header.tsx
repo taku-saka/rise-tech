@@ -216,7 +216,7 @@ const Header = ({}) => {
             <div className="flex items-center space-x-3 cursor-pointer group">
               <div className="relative">
                 <img
-                  src="/logo.png"
+                  src="/logo/ifs_logo.png"
                   alt="Rise Tech Solutions Logo"
                   className="h-10 w-10 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
                 />

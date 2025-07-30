@@ -27,7 +27,7 @@ const CEOMessagePage = () => {
           <div className="text-center mb-12 luxury-entrance stagger-delay-2">
             <div className="relative inline-block group">
               <img
-                src="/S__4333606.jpg"
+                src="/image/executives/setsuga.jpg"
                 alt="代表取締役CEO 節賀 由樹"
                 className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full mx-auto shadow-2xl"
               />

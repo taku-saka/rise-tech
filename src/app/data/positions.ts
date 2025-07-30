@@ -7,7 +7,7 @@ export const recruitmentPositions = [
     description:
       "プログラミング未経験でも大丈夫。充実した研修制度で一からサポートします。",
     icon: Users,
-    image: "/S__4333621.jpg",
+    image: "/image/recruit/beginner.jpg",
     salary: "年収 300-450万円 (現場により異なります)",
     location: "東京・熊本",
     type: "正社員",
@@ -29,7 +29,7 @@ export const recruitmentPositions = [
     description:
       "あなたの技術力を活かし、より大きなプロジェクトに挑戦しませんか。",
     icon: Code,
-    image: "/IMG_1872.jpeg",
+    image: "/image/recruit/experienced.jpeg",
     salary: "年収 500-800万円",
     location: "東京・熊本・リモート",
     type: "正社員",
@@ -47,7 +47,7 @@ export const recruitmentPositions = [
     description:
       "お客様との信頼関係を築き、ビジネスの成長を支える営業職を募集しています。",
     icon: Briefcase,
-    image: "/IMG_1835.jpeg",
+    image: "/image/recruit/sales.jpeg",
     salary: "年収 400-700万円",
     location: "東京・熊本",
     type: "正社員",
