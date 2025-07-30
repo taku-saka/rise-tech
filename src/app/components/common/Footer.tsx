@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="col-span-4 md:col-span-2 mb-5">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/logo.png"
+                src="/logo/ifs_logo.png"
                 alt="Rise Tech Solutions Logo"
                 className="h-8 w-8"
               />
@@ -121,7 +121,7 @@ const Footer = () => {
             <div className="flex space-x-6 mb-4 md:mb-0">
               <a href="https://www.wantedly.com/companies/company_4068809">
                 <button className="text-blue-200 hover:text-cyan-300 transition-all duration-300 hover:scale-110 transform cursor-pointer">
-                  <img className="w-6 h-6" src="/Wantedly_Mark_Wht.png" />
+                  <img className="w-6 h-6" src="/logo/wantedly_logo.png" />
                 </button>
               </a>
 

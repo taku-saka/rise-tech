@@ -62,7 +62,7 @@ const NewsListPage = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {filteredNews.map((item, index) => (
+          {filteredNews.reverse().map((item, index) => (
             <Link href={`/news/${item.id}`} key={item.id}>
               <div>
                 <article

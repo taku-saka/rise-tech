@@ -128,7 +128,7 @@ const RecruitmentDetailPage = async ({
               応募方法
             </h2>
             <p className="text-gray-700 mb-4">
-              下記の応募フォームより
+              下記の応募フォームよりご応募ください。
             </p>
             {/* <div className="space-y-2 text-gray-700">
               <div className="flex items-center">
@@ -147,10 +147,10 @@ const RecruitmentDetailPage = async ({
 
         <div className="text-center mt-12 stagger-fade-in stagger-delay-6">
           <Link href={`/recruitment/form/${position.id}`} key={position.id}>
-          <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
-            <Send className="w-4 h-4 mr-2 inline" />
-            応募フォームへ
-          </button>
+            <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
+              <Send className="w-4 h-4 mr-2 inline" />
+              応募フォームへ
+            </button>
           </Link>
           <Link href="/recruitment">
             <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors mr-4 hover-lift-enhanced cursor-pointer">

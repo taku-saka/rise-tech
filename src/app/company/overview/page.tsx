@@ -26,7 +26,7 @@ const CompanyOverviewPage = () => {
         <div className="glass-card-enhanced p-8 md:p-12 rounded-2xl mb-8 sophisticated-fade stagger-delay-1">
           <div className="relative overflow-hidden rounded-xl mb-8 group">
             <img
-              src="/Bar-Lounge.webp"
+              src="\image\company\office.webp"
               alt="Rise Tech Solutions オフィス"
               className="w-full h-64 md:h-80 object-cover hover-lift-enhanced transition-transform duration-700 group-hover:scale-105"
             />

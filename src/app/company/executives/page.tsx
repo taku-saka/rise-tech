@@ -106,10 +106,10 @@ const ExecutivesPage = () => {
                   <p className="text-gray-700 text-xs leading-relaxed mb-3">
                     {executive.bio}
                   </p>
-                  <div className="flex items-center justify-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors text-sm">
+                  {/* <div className="flex items-center justify-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors text-sm">
                     詳細を見る{" "}
                     <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  </div> */}
                 </div>
               ))}
           </div>

@@ -31,7 +31,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
                   muted
                   loop
                   className="w-full h-full object-cover"
-                  src="/ifsvid.mp4"
+                  src="/video/ifsvid.mp4"
                 ></video>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl"></div>

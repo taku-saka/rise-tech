@@ -42,7 +42,7 @@ export const services = [
     title: "システム開発/SES",
     description: "技術力の高いエンジニアによるシステム開発支援",
     icon: Building,
-    image: "/IMG_1869.jpeg",
+    image: "/image/services/ses.jpeg",
     subServices: [
       {
         title: "システムエンジニアリングサービス",
@@ -95,7 +95,7 @@ export const services = [
     title: "コンサルティング",
     description: "DX推進とビジネス戦略のコンサルティング",
     icon: TrendingUp,
-    image: "/S__4333626_0.jpg",
+    image: "/image/services/consulting.jpg",
     subServices: [
       {
         title: "CSO代行コンサルティング",
