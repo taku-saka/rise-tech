@@ -2,7 +2,7 @@ export const executives = [
   {
     id: "president-office",
     name: "中島 嘉寿",
-    nameKana: "なかじま よしひさ",
+    nameKana: "なかじま よしかず",
     position: "社長室",
     type: "executive",
     image: "/image/executives/nakajima.jpg",

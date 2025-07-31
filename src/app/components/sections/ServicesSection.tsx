@@ -33,33 +33,35 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 items-stretch">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <Link href={`/services/${service.id}`} key={service.id}>
                 <div
                   key={service.id}
-                  className={`glass-card-enhanced p-8 rounded-2xl hover-lift-enhanced cursor-pointer group ${
+                  className={`flex flex-col justify-between h-full glass-card-enhanced p-8 rounded-2xl hover-lift-enhanced cursor-pointer group ${
                     servicesVisible ? "animate-card-appear" : "opacity-0"
                   } stagger-delay-${index + 1}`}
                 >
-                  <div className="relative overflow-hidden rounded-xl mb-6">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white transform transition-transform duration-300 group-hover:scale-110">
-                      <IconComponent className="w-8 h-8" />
+                  <div>
+                    <div className="relative overflow-hidden rounded-xl mb-6">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent"></div>
+                      <div className="absolute bottom-4 left-4 text-white transform transition-transform duration-300 group-hover:scale-110">
+                        <IconComponent className="w-8 h-8" />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <h3 className="font-serif text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 min-h-[3.5rem]">{service.description}</p>
                   </div>
-                  <h3 className="font-serif text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
                   <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
                     詳細を見る{" "}
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />

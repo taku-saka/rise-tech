@@ -108,26 +108,28 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({
             <Link href={`achievements/${achievement.id}`} key={achievement.id}>
               <div
                 key={index}
-                className={`bg-white/90 backdrop-blur-sm p-8 rounded-2xl hover-lift-enhanced shadow-lg group cursor-pointer ${
+                className={`bg-white/90 backdrop-blur-sm p-8 rounded-2xl hover-lift-enhanced shadow-lg group cursor-pointer flex flex-col justify-between h-full ${
                   achievementsVisible ? "animate-card-appear" : "opacity-0"
                 } stagger-delay-${index + 1}`}
               >
-                <div className="relative overflow-hidden rounded-xl mb-6">
-                  <img
-                    src={achievement.image}
-                    alt={achievement.title}
-                    className="w-full h-48 object-cover news-image-enhanced"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse-subtle">
-                      {achievement.category}
-                    </span>
+                <div>
+                  <div className="relative overflow-hidden rounded-xl mb-6">
+                    <img
+                      src={achievement.image}
+                      alt={achievement.title}
+                      className="w-full h-48 object-cover news-image-enhanced"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse-subtle">
+                        {achievement.category}
+                      </span>
+                    </div>
                   </div>
+                  <h3 className="font-serif text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
+                    {achievement.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 min-h-[3.5rem] overflow-hidden">{achievement.description}</p>
                 </div>
-                <h3 className="font-serif text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
-                  {achievement.title}
-                </h3>
-                <p className="text-gray-600 mb-4 h-[3.5rem] overflow-hidden">{achievement.description}</p>
                 <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
                   詳細を見る{" "}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />

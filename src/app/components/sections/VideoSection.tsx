@@ -30,6 +30,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
                   autoPlay
                   muted
                   loop
+                  playsInline
                   className="w-full h-full object-cover"
                   src="/video/ifsvid.mp4"
                 ></video>

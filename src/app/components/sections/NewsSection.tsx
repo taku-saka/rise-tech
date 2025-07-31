@@ -90,35 +90,35 @@ const NewsSection: React.FC<NewsSectionProps> = ({ newsRef, newsVisible }) => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 items-stretch">
           {news.slice(0, 3).map((item, index) => (
             <Link href={`/news/${item.id}`} key={item.id}>
               <article
                 key={index}
-                className={`bg-white/90 backdrop-blur-sm p-6 rounded-2xl hover-lift-enhanced shadow-lg cursor-pointer transform transition-all duration-500 ${
+                className={`flex flex-col justify-between h-full bg-white/90 backdrop-blur-sm p-6 rounded-2xl hover-lift-enhanced shadow-lg cursor-pointer transform transition-all duration-500 ${
                   newsVisible ? "animate-card-appear" : "opacity-0"
                 } stagger-delay-${index + 1}`}
               >
-                <div className="relative overflow-hidden rounded-xl mb-4 group">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse-subtle">
-                      {item.category}
-                    </span>
+                <div>
+                  <div className="relative overflow-hidden rounded-xl mb-4 group">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse-subtle">
+                        {item.category}
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <time className="text-sm text-gray-500 mb-2 block">{item.date}</time>
+                  <h3 className="font-serif text-lg font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm min-h-[3.5rem]">{item.excerpt}</p>
                 </div>
-                <time className="text-sm text-gray-500 mb-2 block">
-                  {item.date}
-                </time>
-                <h3 className="font-serif text-lg font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm h-[3.5rem] overflow-hidden">{item.excerpt}</p>
               </article>
             </Link>
           ))}
