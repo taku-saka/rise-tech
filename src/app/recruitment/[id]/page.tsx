@@ -147,18 +147,18 @@ const RecruitmentDetailPage = async ({
 
         <div className="text-center mt-12 stagger-fade-in stagger-delay-6">
           <Link href={`/recruitment/form/${position.id}`} key={position.id}>
-            <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
+            <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced m-2 cursor-pointer">
               <Send className="w-4 h-4 mr-2 inline" />
               応募フォームへ
             </button>
           </Link>
           <Link href="/recruitment">
-            <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors mr-4 hover-lift-enhanced cursor-pointer">
+            <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors m-2 hover-lift-enhanced cursor-pointer">
               採用情報一覧に戻る
             </button>
           </Link>
           <Link href="/">
-            <button className="bg-gray-200 text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-300 transition-colors hover-lift-enhanced cursor-pointer">
+            <button className="bg-gray-200 text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-300 transition-colors m-2 hover-lift-enhanced cursor-pointer">
               ホームに戻る
             </button>
           </Link>

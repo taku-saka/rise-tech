@@ -132,12 +132,12 @@ const CompanyAccessPage = () => {
 
         <div className="text-center mt-12 stagger-fade-in stagger-delay-3">
           <Link href="/">
-            <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
+            <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced m-2 cursor-pointer">
               ホームに戻る
             </button>
           </Link>
           <Link href="/contact">
-            <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors hover-lift-enhanced cursor-pointer">
+            <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors hover-lift-enhanced m-2 cursor-pointer">
               お問い合わせ
             </button>
           </Link>

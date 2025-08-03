@@ -77,14 +77,14 @@ const CEOMessagePage = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12 premium-reveal stagger-delay-4">
+        <div className="text-center mt-12 stagger-delay-4">
           <Link href="/">
-            <button className="btn-primary-enhanced text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
+            <button className="btn-primary-enhanced text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced m-2 cursor-pointer">
               ホームに戻る
             </button>
           </Link>
           <Link href="/">
-            <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors hover-lift-enhanced cursor-pointer">
+            <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors hover-lift-enhanced m-2 cursor-pointer">
               お問い合わせ
             </button>
           </Link>

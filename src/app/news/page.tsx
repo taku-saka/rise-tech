@@ -30,7 +30,7 @@ const NewsListPage = () => {
           <div className="flex gap-2 bg-white p-2 rounded-lg shadow-md">
             <button
               onClick={() => setNewsFilter("all")}
-              className={`cursor-pointer px-6 py-2 rounded-lg font-medium transition-all duration-300 hover-lift-enhanced ${
+              className={`cursor-pointer px-4 sm:px-6 md:px-8 py-2 rounded-lg font-medium transition-all duration-300 hover-lift-enhanced ${
                 newsFilter === "all"
                   ? "bg-blue-600 text-white shadow-md transform scale-105"
                   : "text-gray-700 hover:bg-blue-50 hover:text-blue-600 hover:scale-105"
@@ -40,7 +40,7 @@ const NewsListPage = () => {
             </button>
             <button
               onClick={() => setNewsFilter("お知らせ")}
-              className={`cursor-pointer px-6 py-2 rounded-lg font-medium transition-all duration-300 hover-lift-enhanced ${
+              className={`cursor-pointer px-4 sm:px-6 md:px-8 py-2 rounded-lg font-medium transition-all duration-300 hover-lift-enhanced ${
                 newsFilter === "お知らせ"
                   ? "bg-blue-600 text-white shadow-md transform scale-105"
                   : "text-gray-700 hover:bg-blue-50 hover:text-blue-600 hover:scale-105"
@@ -50,7 +50,7 @@ const NewsListPage = () => {
             </button>
             <button
               onClick={() => setNewsFilter("サービス")}
-              className={`cursor-pointer px-6 py-2 rounded-lg font-medium transition-all duration-300 hover-lift-enhanced ${
+              className={`cursor-pointer px-4 sm:px-6 md:px-8 py-2 rounded-lg font-medium transition-all duration-300 hover-lift-enhanced ${
                 newsFilter === "サービス"
                   ? "bg-blue-600 text-white shadow-md transform scale-105"
                   : "text-gray-700 hover:bg-blue-50 hover:text-blue-600 hover:scale-105"

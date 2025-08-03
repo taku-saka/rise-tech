@@ -37,13 +37,13 @@ const CompanyOverviewPage = () => {
 
         <div className="glass-card-enhanced p-8 md:p-12 rounded-2xl luxury-entrance stagger-delay-2">
           <div className="space-y-8">
-            <div className="grid md:grid-cols-3 gap-6 premium-reveal stagger-delay-3">
-              <div className="md:col-span-1 p-2">
+            <div className="grid md:grid-cols-3 gap-6 premium-reveal stagger-delay-3 p-2">
+              <div className="md:col-span-1">
                 <h3 className="font-serif text-lg font-bold text-gray-800 flex items-center">
                   社名
                 </h3>
               </div>
-              <div className="md:col-span-2 p-2">
+              <div className="md:col-span-2">
                 <p className="text-gray-700 flex items-center">
                   株式会社Rise Tech Solutions（旧会社名:株式会社IFS）
                 </p>
