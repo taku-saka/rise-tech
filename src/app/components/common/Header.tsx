@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronRight, Plus, Minus } from "lucide-react";
 import { companyMenuItems } from "../../data/menu";
 import Link from "next/link";
 
@@ -9,6 +9,7 @@ const Header = ({}) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [companyDropdown, setCompanyDropdown] = useState(false);
+  const [mobileCompanyDropdown, setMobileCompanyDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,7 @@ const Header = ({}) => {
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
+    setMobileCompanyDropdown(false);
   };
 
   return (
@@ -305,7 +307,7 @@ const Header = ({}) => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-blue-800/30 animate-slide-down">
-          <nav className="px-4 py-6 space-y-4 text-white">
+          <nav className="px-4 py-6 text-white">
             <Link href="/services" passHref>
               <div
                 className="block w-full text-left py-2 hover:text-cyan-300 transition-colors transform hover:translate-x-2 cursor-pointer"
@@ -314,14 +316,33 @@ const Header = ({}) => {
                 事業内容
               </div>
             </Link>
-            <Link href="/company/overview" passHref>
+            <div className="w-full">
               <div
-                className="block w-full text-left py-2 hover:text-cyan-300 transition-colors transform hover:translate-x-2 cursor-pointer"
-                onClick={handleLinkClick}
+                className="flex items-center justify-between w-full text-left py-2 hover:text-cyan-300 transition-colors transform hover:translate-x-2 cursor-pointer"
+                onClick={() => setMobileCompanyDropdown(!mobileCompanyDropdown)}
               >
-                企業情報
+                <span>企業情報</span>
+                {mobileCompanyDropdown ? (
+                  <Minus className="w-4 h-4" />
+                ) : (
+                  <Plus className="w-4 h-4" />
+                )}
               </div>
-            </Link>
+              {mobileCompanyDropdown && (
+                <div className="ml-4 mt-2 space-y-2 border-l-2 border-cyan-300/30 pl-4">
+                  {companyMenuItems.map((item) => (
+                    <Link href={`/company/${item.id}`} key={item.id} passHref>
+                      <div
+                        className="block w-full text-left py-1 hover:text-cyan-300 transition-colors transform hover:translate-x-2 cursor-pointer text-sm"
+                        onClick={handleLinkClick}
+                      >
+                        {item.title}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Link href="/news" passHref>
               <div
                 className="block w-full text-left py-2 hover:text-cyan-300 transition-colors transform hover:translate-x-2 cursor-pointer"
