@@ -140,7 +140,7 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({
         </div>
 
         <div className="text-center">
-          <Link href="/achievements">
+          <Link href="/company/achievements">
             <button className="btn-primary-enhanced text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced cursor-pointer">
               Read More
             </button>

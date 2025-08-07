@@ -83,7 +83,7 @@ const CEOMessagePage = () => {
               ホームに戻る
             </button>
           </Link>
-          <Link href="/">
+          <Link href="/contact">
             <button className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors hover-lift-enhanced m-2 cursor-pointer">
               お問い合わせ
             </button>

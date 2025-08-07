@@ -4,4 +4,5 @@ export const companyMenuItems = [
   { id: "executives", title: "役員/執行役員一覧" },
   { id: "history", title: "沿革" },
   { id: "access", title: "アクセス" },
+  { id: "achievements", title: "実績紹介" },
 ];

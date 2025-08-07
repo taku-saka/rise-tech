@@ -99,9 +99,9 @@ const CompanyAccessPage = () => {
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-3">最寄り駅</h3>
                   <div className="space-y-2 text-sm text-gray-700">
-                    <p>• JR鹿児島本線「熊本駅」徒歩8分</p>
-                    <p>• 熊本市電「熊本駅前駅」徒歩5分</p>
-                    <p>• 熊本市電「祇園橋駅」徒歩7分</p>
+                    <p>• JR鹿児島本線「熊本駅」徒歩3分</p>
+                    <p>• 熊本市電「熊本駅前駅」徒歩3分</p>
+                    <p>• 熊本市電「祇園橋駅」徒歩9分</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const CompanyAccessPage = () => {
                   </h3>
                   <div className="space-y-2 text-sm text-gray-700">
                     <p>• 熊本空港から車で約40分</p>
-                    <p>• 熊本ICから車で約15分</p>
+                    <p>• 熊本ICから車で約50分</p>
                     <p>• 駐車場完備</p>
                   </div>
                 </div>

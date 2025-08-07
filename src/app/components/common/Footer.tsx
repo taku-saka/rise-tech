@@ -105,7 +105,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="recruitment">
+                <Link href="/recruitment">
                   <button className="text-blue-200 hover:text-cyan-300 transition-colors text-sm hover:translate-x-1 transform cursor-pointer">
                     採用情報
                   </button>

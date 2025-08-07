@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import { achievements } from "../data/achievements";
+import { achievements } from "../../data/achievements";
 import Link from "next/link";
 
 const AchievementsListPage = () => {
@@ -20,7 +20,7 @@ const AchievementsListPage = () => {
           {achievements.map((achievement, index) => {
             return (
               <Link
-                href={`/achievements/${achievement.id}`}
+                href={`/company/achievements/${achievement.id}`}
                 key={achievement.id}
               >
                 <div

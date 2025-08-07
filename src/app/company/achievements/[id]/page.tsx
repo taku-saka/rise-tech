@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import { ExternalLink } from "lucide-react";
-import { achievements } from "../../data/achievements";
+import { achievements } from "../../../data/achievements";
 import Link from "next/link";
 
 type Props = {
@@ -28,7 +28,7 @@ const AchievementDetailPage = async ({
           <h1 className="font-serif text-4xl font-bold mb-6 gradient-text animate-text-shimmer">
             実績が見つかりません
           </h1>
-          <Link href="achievements">
+          <Link href="/company/achievements">
             <button className="btn-primary text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced cursor-pointer">
               実績一覧に戻る
             </button>
@@ -144,7 +144,7 @@ const AchievementDetailPage = async ({
         </div>
 
         <div className="text-center mt-12 stagger-fade-in stagger-delay-6">
-          <Link href="/achievements">
+          <Link href="/company/achievements">
             <button className="btn-primary-enhanced text-white px-8 py-3 rounded-full font-semibold hover-lift-enhanced mr-4 cursor-pointer">
               実績一覧に戻る
             </button>
