@@ -111,7 +111,7 @@ const ServiceDetailPage = async ({ params }: Props): Promise<JSX.Element> => {
 
         {/* Service Features and Technology Stack for specific services */}
         {id === "outsourcing" && (
-          <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="glass-card p-8 rounded-2xl stagger-fade-in stagger-delay-5">
               <h2 className="font-serif text-2xl font-bold mb-6 text-gray-800 flex items-center">
                 <Star className="w-6 h-6 mr-3 text-blue-600" />

@@ -255,9 +255,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heroRef, heroVisible }) => {
             heroVisible ? "animate-slide-up-delay-bounce" : "opacity-0"
           }`}
         >
-          すべての挑戦を、
+          テクノロジーと共創の力で、
           <br className="block md:hidden" />
-          テクノロジーでミライにつなぐ。
+          社会課題に挑み続ける。
         </p>
       </div>
     </section>
