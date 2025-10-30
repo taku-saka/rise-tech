@@ -87,10 +87,23 @@ const CompanyOverviewPage = () => {
                   <p>藤井 謙治</p> */}
                 {/* <p className="">執行役員VPoE</p>
                 <p>熊谷 洸介</p> */}
-                <p className="">VPoE</p>
-                <p>坂口 拓</p>
+                {/* <p className="">VPoE</p>
+                <p>坂口 拓</p> */}
                 <p className="">Principal Engineer</p>
                 <p>加藤 一登</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 premium-reveal stagger-delay-6 p-2">
+              <div className="md:col-span-1">
+                <h3 className="font-serif text-lg font-bold text-gray-800 flex items-center">
+                  顧問弁護士
+                </h3>
+              </div>
+              <div className="md:col-span-2">
+                <p className="text-gray-700 flex items-center">
+                  東京新橋法律事務所
+                </p>
               </div>
             </div>
 

@@ -23,13 +23,21 @@ const ExecutivesPage = () => {
           </h2>
           {(() => {
             const filteredExecutives = executives.filter((exec) => exec.type === "executive");
-            const gridColsClass =
-              filteredExecutives.length === 2
-                ? "grid-cols-1 md:grid-cols-2"
-                : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+            const count = filteredExecutives.length;
+            let gridColsClass = "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+            let containerClass = "";
+
+            if (count === 1) {
+              gridColsClass = "grid-cols-1";
+              containerClass = "md:max-w-md md:mx-auto";
+            } else if (count % 3 === 0) {
+              gridColsClass = "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+            } else if (count % 2 === 0) {
+              gridColsClass = "grid-cols-1 md:grid-cols-2";
+            }
 
             return (
-              <div className={`grid ${gridColsClass} gap-8 items-stretch`}>
+              <div className={`grid ${gridColsClass} gap-8 items-stretch ${containerClass}`}>
                 {filteredExecutives.map((executive, index) => (
                   <Link
                     href={`/company/executives/${executive.id}`}
@@ -84,13 +92,21 @@ const ExecutivesPage = () => {
           </h2>
           {(() => {
             const filteredExecutives = executives.filter((exec) => exec.type === "officer");
-            const gridColsClass =
-              filteredExecutives.length === 2
-                ? "grid-cols-1 md:grid-cols-2"
-                : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+            const count = filteredExecutives.length;
+            let gridColsClass = "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+            let containerClass = "";
+
+            if (count === 1) {
+              gridColsClass = "grid-cols-1";
+              containerClass = "md:max-w-md md:mx-auto";
+            } else if (count % 3 === 0) {
+              gridColsClass = "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+            } else if (count % 2 === 0) {
+              gridColsClass = "grid-cols-1 md:grid-cols-2";
+            }
 
             return (
-              <div className={`grid ${gridColsClass} gap-8 items-stretch`}>
+              <div className={`grid ${gridColsClass} gap-8 items-stretch ${containerClass}`}>
                 {filteredExecutives.map((executive, index) => (
                   <Link
                     href={`/company/executives/${executive.id}`}

@@ -82,24 +82,24 @@ export const executives = [
   //   message:
   //     "技術力と組織力の両面から、エンジニアが活躍できる環境を作ってまいります。",
   // },
-  {
-    id: "vpoe2",
-    name: "坂口 拓",
-    nameKana: "さかぐち たく",
-    position: "執行役員VPoE",
-    type: "officer",
-    image: "/image/executives/sakaguchi.jpg",
-    bio: "VPoEとしてエンジニアの採用・育成を担当。技術教育プログラムの企画・運営を推進。",
-    career: [
-      "2016年 - 京都大学大学院 卒業",
-      "2016年 - 某省庁へ入省",
-      "2024年 - 当社へ入社（システム開発エンジニア）",
-      "2025年 - VPoEに就任",
-    ],
-    expertise: ["技術教育", "採用戦略", "メンタリング", "システム設計"],
-    message:
-      "エンジニア一人ひとりの成長を支援し、技術力の向上に貢献してまいります。",
-  },
+  // {
+  //   id: "vpoe2",
+  //   name: "坂口 拓",
+  //   nameKana: "さかぐち たく",
+  //   position: "執行役員VPoE",
+  //   type: "officer",
+  //   image: "/image/executives/sakaguchi.jpg",
+  //   bio: "VPoEとしてエンジニアの採用・育成を担当。技術教育プログラムの企画・運営を推進。",
+  //   career: [
+  //     "2016年 - 京都大学大学院 卒業",
+  //     "2016年 - 某省庁へ入省",
+  //     "2024年 - 当社へ入社（システム開発エンジニア）",
+  //     "2025年 - VPoEに就任",
+  //   ],
+  //   expertise: ["技術教育", "採用戦略", "メンタリング", "システム設計"],
+  //   message:
+  //     "エンジニア一人ひとりの成長を支援し、技術力の向上に貢献してまいります。",
+  // },
   {
     id: "principal-engineer",
     name: "加藤 一登",
@@ -109,7 +109,7 @@ export const executives = [
     image: "/image/executives/kato.png",
     bio: "Principal Engineerとして技術戦略の立案・実行を担当。最新技術の導入と技術的課題の解決をリード。",
     career: [
-      "2021年 - 九州オリンピア工業株式会社の開発課に入社",
+      "2021年 - 燃焼機器メーカーの開発課に新卒で入社",
       "2024年 - 当グループ会社のCyber Vision合同会社に入社",
       "2024年 - 当社へ入社（システム開発エンジニア）",
       "2025年 - Principal Engineerに就任",
